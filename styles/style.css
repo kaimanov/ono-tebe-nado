@@ -3,12 +3,13 @@
   grid-template-columns: 1fr 148px 1fr;
   align-items: center;
   padding: 92px 49px 92px 51px;
+  height: 293px;
 }
 
 .header__menu {
   display: flex;
   justify-content: space-between;
-  width: 388px;
+  width: 405px;
   height: 23px;
 }
 
@@ -16,7 +17,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 13px;
+  gap: 20px;
   list-style: circle;
 }
 
@@ -60,6 +61,7 @@ li:first-child {
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
+  line-height: 24.3px; /* 135% */
 }
 
 .cover {
@@ -68,6 +70,7 @@ li:first-child {
   display: flex;
   flex-direction: column;
   padding: 165px 50px 50px;
+  height: 757px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center top;
@@ -89,7 +92,7 @@ li:first-child {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  gap: 12px;
   color: #FFF;
   font-weight: 700;
   font-size: 100px;
@@ -111,6 +114,7 @@ li:first-child {
 .aligned-text_right {
   display: flex;
   justify-content: end;
+  align-items: start;
 }
 
 .letter-spacing-extended {
@@ -123,10 +127,10 @@ li:first-child {
 
 .cover__description {
   display: grid;
-  grid-template-columns: 1fr 633px 1fr;
+  grid-template-columns: 1fr 670px 1fr;
   justify-items: center;
   align-items: center;
-  padding-top: 135px;
+  padding-top: 118px;
 }
 
 .cover__description-text {
@@ -139,6 +143,8 @@ li:first-child {
   line-height: 28px;
   text-transform: uppercase;
   word-spacing: 17.5px;
+  padding-left: 20px;
+  justify-self: end;
 }
 
 .bet-button {
@@ -157,7 +163,7 @@ li:first-child {
 }
 
 .lots {
-  padding: 180px 50px 181px;
+  padding: 183px 50px 181px;
 }
 
 .lots__heading {
@@ -169,6 +175,7 @@ li:first-child {
   font-style: normal;
   line-height: normal;
   text-transform: uppercase;
+  padding-left: 40px;
 }
 
 .lots__card-list {
@@ -255,6 +262,7 @@ li:first-child {
   font-style: normal;
   line-height: normal;
   text-decoration: underline;
+  padding-left: 40px;
 }
 
 .about {
@@ -264,7 +272,7 @@ li:first-child {
   grid-template-areas: 
   "about__box about__title about__title"
   ". about__text about__text";
-  gap: 25px;
+  gap: 11px;
   padding: 0px 50px 180px;
 }
 
@@ -280,6 +288,7 @@ li:first-child {
   height: 240px;
   border-radius: 50%;
   background-color: #000;
+  padding-right: 10px;
 }
 
 .about__logo-image {
