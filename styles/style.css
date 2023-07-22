@@ -1,8 +1,8 @@
 .header {
-  padding: 92px 49px 92px 51px;
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
   align-items: center;
+  padding: 92px 49px 92px 51px;
 }
 
 .header__menu {
@@ -14,18 +14,18 @@
 
 .header__menu-list {
   display: flex;
-  gap: 13px;
-  list-style: circle;
   justify-content: start;
   align-items: center;
+  gap: 13px;
+  list-style: circle;
 }
 
 .header__menu-link {
+  padding-right: 13px;
   color: #000;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
-  padding-right: 13px;
 }
 
 li:first-child {
@@ -48,8 +48,8 @@ li:first-child {
 
 .header__address {
   display: flex;
-  width: 240px;
   justify-self: end;
+  width: 240px;
 }
 
 .address {
@@ -57,43 +57,43 @@ li:first-child {
   padding: 0;
   color: #000;
   font-family: Raleway;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
 }
 
 .cover {
+  position: relative;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   padding: 165px 50px 50px;
   background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 0;
 }
 
 .overlay {
-  width: 100%;
-  height: 100%;
+  position: absolute;
   top: 0%;
   left: 0%;
-  background-color: rgb(0 0 0 / 0.6);
-  position: absolute;
   z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 0.6);
 }
 
 .cover__title {
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
   color: #FFF;
-  z-index: 2;
+  font-weight: 700;
   font-size: 100px;
   font-style: normal;
-  font-weight: 700;
   letter-spacing: 30px;
 
 }
@@ -124,36 +124,36 @@ li:first-child {
 .cover__description {
   display: grid;
   grid-template-columns: 1fr 633px 1fr;
-  padding-top: 135px;
-  align-items: center;
   justify-items: center;
+  align-items: center;
+  padding-top: 135px;
 }
 
 .cover__description-text {
-  color: #FFF;
-  grid-column-start: 2;
   z-index: 3;
+  grid-column-start: 2;
+  color: #FFF;
+  font-weight: 400;
   font-size: 22px;
   font-style: normal;
-  font-weight: 400;
+  line-height: 28px;
   text-transform: uppercase;
   word-spacing: 17.5px;
-  line-height: 28px;
 }
 
 .bet-button {
-  color: #FFF;
-  background-color: rgba(28,28,28,0);
-  justify-self: end;
   z-index: 3;
-  text-transform: uppercase;
+  justify-self: end;
   width: 257px;
   height: 52px;
   border: 1px solid #FFF;
+  color: #FFF;
+  font-weight: 400;
   font-size: 22px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
+  text-transform: uppercase;
+  background-color: rgba(28,28,28,0);
 }
 
 .lots {
@@ -161,111 +161,111 @@ li:first-child {
 }
 
 .lots__heading {
+  margin-bottom: 27px;
   color: #000;
   font-family: Raleway;
+  font-weight: 700;
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  margin-bottom: 27px;
 }
 
 .lots__card-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  list-style: none;
   gap: 25px;
   margin-bottom: 30px;
+  list-style: none;
 }
 
 .lots__card-list-item {
+  flex-grow: 1;
   width: 430px;
   min-height: 450px;
-  flex-grow: 1
 }
 
 .card-link {
   display: block;
-  text-decoration: none;
   height: 100%;
+  text-decoration: none;
 }
 
 .card {
   position: relative;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 50px 40px;
   justify-content: space-between;
+  height: 100%;
+  padding: 50px 40px;
 }
 
 .card_type_film {
+  z-index: 0;
   background-image: url(../images/card-lot-01.jpg);
+  background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 0;
 }
 
 .card_type_book {
+  z-index: 0;
   background-image: url(../images/card-lot-02.jpg);
+  background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 0;
 }
 
 .card_type_picture {
+  z-index: 0;
   background-image: url(../images/card-lot-03.jpg);
+  background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 0;
 }
 
 .card__title {
+  z-index: 2;
   color: #FFF;
   font-family: Raleway;
+  font-weight: 700;
   font-size: 22px;
   font-style: normal;
-  font-weight: 700;
   line-height: 120%; /* 26.4px */
   text-decoration-line: underline;
   text-transform: uppercase;
-  z-index: 2;
 }
 
 .card__text {
+  z-index: 2;
   color: #FFF;
   font-family: Raleway;
+  font-weight: 400;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
   line-height: 120%; /* 24px */
-  z-index: 2;
 }
 
 .lots__look-more-link {
   color: #000;
   font-family: Raleway;
+  font-weight: 400;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
   text-decoration: underline;
 }
 
 .about {
-  padding: 0px 50px 180px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 240px 1fr;
   grid-template-areas: 
   "about__box about__title about__title"
   ". about__text about__text";
-  grid-template-rows: 240px 1fr;
   gap: 25px;
+  padding: 0px 50px 180px;
 }
 
 .about__box {
@@ -276,53 +276,53 @@ li:first-child {
   display: grid;
   justify-self: center;
   align-self: center;
-  background-color: #000;
-  border-radius: 50%;
   width: 240px;
   height: 240px;
+  border-radius: 50%;
+  background-color: #000;
 }
 
 .about__logo-image {
+  flex-shrink: 0;
+  justify-self: center;
+  align-self: center;
   width: 148px;
   height: 114px;
-  flex-shrink: 0;
-  align-self: center;
-  justify-self: center;
 }
 
 .about__title {
+  grid-column: 2/4;
+  align-self: center;
   color: #000;
   font-family: Raleway;
+  font-weight: 700;
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  align-self: center;
-  grid-column: 2/4
 }
 
 .about__text {
+  grid-column: 2/4;
   grid-column-start: 2;
   color: #000;
   font-family: Raleway;
+  font-weight: 400;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
-  grid-column: 2/4
 }
 
 .footer {
-  padding: 0px 50px 90px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
+  padding: 0px 50px 90px;
 }
 
 .footer__address {
-  width: 240px;
   justify-content: start;
+  width: 240px;
 }
 
 .footer__menu {
@@ -339,9 +339,9 @@ li:first-child {
 .footer__menu-link {
   color: #000;
   font-family: Raleway;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
   text-decoration: underline;
 }
