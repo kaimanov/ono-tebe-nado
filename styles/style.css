@@ -323,7 +323,7 @@ li:last-child {
 
 .about__text {
   grid-column-start: 2;
-  width: 893px;
+  max-width: 893px;
   padding-left: 16px;
   color: #000;
   font-family: Raleway;
@@ -336,6 +336,17 @@ li:last-child {
 .about__text-p {
   padding-top: 25px;
 }
+
+/*
+
+Не получается у меня что то с псевдоклассами...
+Наверное не совсем понимаю как это работает, еще не проходил эту тему)
+
+about__text:first-child {
+  margin-bottom: 25px;
+}
+
+*/
 
 .footer {
   display: grid;
